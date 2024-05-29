@@ -1,0 +1,124 @@
+.product-details {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.product-image-container {
+  width: 50%;
+  max-width: 400px;
+  margin-right: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+}
+
+.product-info {
+  flex-grow: 1;
+}
+
+.product-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  margin-bottom: 20px;
+}
+
+.product-actions {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button[color="primary"] {
+  background-color: #4caf50;
+  color: white;
+}
+
+button[color="primary"]:hover {
+  background-color: #388e3c;
+}
+
+button[color="accent"] {
+  background-color: #2196f3;
+  color: white;
+}
+
+button[color="accent"]:hover {
+  background-color: #1976d2;
+}
+
+.delivery-info {
+  margin-top: 10px;
+}
+
+.delivery-info span {
+  margin-right: 10px;
+}
+
+.quantity-input {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.quantity-input label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.quantity-input input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 50px;
+}
+
+.product-actions {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+button {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button[color="primary"] {
+  background-color: #4caf50;
+  color: white;
+}
+
+button[color="primary"]:hover {
+  background-color: #388e3c;
+}
+
+button[color="accent"] {
+  background-color: #2196f3;
+  color: white;
+}
+
+button[color="accent"]:hover {
+  background-color: #1976d2;
+}
+

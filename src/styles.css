@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #7b4d57;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  font-size: 12px;
+}
+
+a {
+  color: #f8f8f8;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+button {
+  background-color: #945a61;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #833d48;
+}
+
+header, footer {
+  background-color: #6a3e4d;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}

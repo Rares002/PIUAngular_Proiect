@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #232323;
+  color: #cdcdcd;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.center-container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.form-container {
+  background-color: darkred;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-container h2 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.form-container label {
+  color: #fff;
+}
+
+.form-container input {
+  width: 91%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background-color: salmon;
+  color: #fff;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: none;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #45a049;
+}
+
+.form-container button[type="button"] {
+  background-color: #008CBA;
+}
+
+.form-container button[type="button"]:hover {
+  background-color: #007bb5;
+}
+
+.form-container .errorMessage {
+  color: red;
+  margin-top: 10px;
+}

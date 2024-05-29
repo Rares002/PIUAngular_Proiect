@@ -1,0 +1,21 @@
+<div class="center-container">
+  <div class="form-container">
+    <h2>Signup</h2>
+    <form (ngSubmit)="signup()">
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" [(ngModel)]="username" name="username">
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" [(ngModel)]="password" name="password">
+      </div>
+      <div>
+        <input type="checkbox" id="terms" [(ngModel)]="termsAccepted" name="terms">
+        <label for="terms">Accept terms and conditions</label>
+      </div>
+      <button type="submit" [disabled]="!termsAccepted">Signup</button>
+      <div *ngIf="errorMessage">{{ errorMessage }}</div>
+    </form>
+  </div>
+</div>

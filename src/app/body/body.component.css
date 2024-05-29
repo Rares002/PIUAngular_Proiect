@@ -1,0 +1,36 @@
+.main-content {
+  display: flex;
+  align-items: center; /* Aligns items vertically in the center */
+  justify-content: center; /* Centers the content horizontally */
+  margin: 20px;
+  padding: 20px;
+}
+
+.image-container {
+  flex: 1; /* Takes up 1 portion of the flex container */
+  padding: 10px;
+}
+
+.image-container img {
+  width: 100%; /* Makes the image fully occupy its container */
+  height: auto; /* Maintains aspect ratio */
+}
+
+.text-container {
+  flex: 2; /* Takes up 2 portions of the flex container */
+  padding: 10px;
+  color: #fff; /* Assuming a dark background, set text to white */
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column; /* Stack the elements vertically on smaller screens */
+  }
+
+  .image-container,
+  .text-container {
+    flex: none; /* Resetting the flex property */
+    width: 100%; /* Full width for smaller screens */
+  }
+}

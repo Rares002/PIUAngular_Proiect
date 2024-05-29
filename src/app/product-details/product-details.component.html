@@ -1,0 +1,21 @@
+<div *ngIf="product" class="product-details">
+  <div class="product-image-container">
+    <img *ngIf="product.imageUrl" [src]="product.imageUrl" [alt]="product.title || 'Title not available'" class="product-image">
+  </div>
+  <div class="product-info">
+    <h2 class="product-title">{{product.title || 'Title not available'}}</h2>
+    <p class="product-description">{{product.description || 'Description not available'}}</p>
+    <div class="delivery-info">
+      <span>Estimated Delivery:</span>
+      <span>30-40 de minute</span>
+    </div>
+    <div class="quantity-input">
+      <label for="quantity">Quantity:</label>
+      <input id="quantity" type="number" min="1" value="1">
+    </div>
+    <div class="product-actions">
+      <button mat-flat-button color="primary" (click)="buyNow(product)" *ngIf="product">Buy Now</button>
+      <button mat-flat-button color="accent" (click)="addToCart(product)" *ngIf="product">Add to Cart</button>
+    </div>
+  </div>
+</div>
